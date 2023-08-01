@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- css bootstrap library -->
+        <link rel="stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+        <!-- jQuery bootstrap library -->
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+        <!-- javaScript bootstrap library -->
+        <script src =  "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+        <!-- Local css style file -->
+        <link rel="stylesheet" href="style.css">
+
+        <title>Testimonial_add</title>
+
+        <style>
+            body{
+                margin-left: 25%
+            }
+            /*
+            body{
+                font-family: 'Varela Round', sans-serif;
+                display: flex;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+                background-color: #E1D9D1;
+                width: 960px;
+                height: 800px;
+                margin: 0px auto 0px auto;
+                margin-top: 100px;
+                margin-bottom: 100px;
+                border-radius: 5px;
+                padding-left: 50px;
+                padding-top: -300px;
+                opacity: 0.95;
+                font-family: Arial, Helvetica, sans-serif
+            }
+
+            .in input{
+                height: 30px;
+                width: 200px;
+                border-radius: 8px;
+            }
+
+            .in select{
+                height: 30px;
+                width: 200px;
+                border-radius: 8px;
+            }
+             .in select optgroup{
+
+            border-radius: 8px;
+            } 
+
+            .in textarea{
+                height: 250px;
+                width: 400px;
+                border-radius: 8px;
+            }
+            .btt {
+                text-align: center;
+                padding-top: 10px;
+            }
+            .btt button {
+                height: 30px;
+                border-radius: 8px;
+            }
+            */
+        </style>
+    </head>
+
+    <body>
+<!--
+      <div class="content">
+                <div class="header">				
+                    <h4 class="title">Login</h4>
+                </div>
+                <div class="body">
+                    <form action="login.php" method="post" novalidate>
+
+                        <!-- Email section
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" required="required">
+                            </div>
+                        </div>
+
+                        <!-- Password section 
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-eye-close"></i></span>
+                                <input type="password" class="form-control" name="psw" id="psw" placeholder="Enter password" required="required">
+                            </div>
+                        </div>
+
+                        <!-- Submit button
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block btn-lg">Sign In</button>
+                        </div>
+
+                        <div class="form-group">
+                            <label><input type="checkbox">Remember me</label>
+                        </div>
+
+                        <!-- Pwd Reset section 
+                        <div class="form-group">
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Register section 
+                <div class="footer">Don't have an account? <a href="register.html">Register here</a></div>
+            </div>
+       -->
+        <div class="container">
+           <div class="header">				
+                    <h2 class="title">Add Your Feedback</h2>
+                </div>
+                <div class="body">
+            <form action="testimonial_add.php" method="post" novalidate>
+
+                
+                        <!-- Name section -->
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input type="text" class="form-control" name="firstname" id="firstname" placeholder="Enter firstname" required="required">
+                            </div>
+                        </div>
+                        <br>
+                        
+                    <!-- Date section -->
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                <input type="date" class="form-control" name="days_date" id="days_date" required="required">
+                            </div>
+                        </div>
+                    <br>
+                                        
+                    <!-- Select menu -->
+                    <div class="form-group">
+                        <select class="form-control" id="choose_service" name="service">
+                            <option value="">Click to choose service</option>
+                            <optgroup label="Half Day">
+                                <option value="1 Day(Half Day)">1 Day(Half Day)</option>
+                                <option value="3 Day(Half Day)">3 Days(Half Day)</option>
+                                <option value="5 Day(Half Day)">5 Days(Half Day)</option>
+
+                            </optgroup>
+
+                            <optgroup label="Full Day">
+                                <option value="1 Day(Full Day)">1 Day(Full Day)</option>
+                                <option value="3 Day(Full Day)">3 Days(Full Day)</option>
+                                <option value="5 Day(Full Day)">5 Days(Full Day)</option>
+
+                            </optgroup>
+
+                        </select>
+                    </div>
+                    
+                   <!-- Comment section -->
+                   <div class="form-group">
+                       <label for="comment"><h4>Enter comment: </h4></label>
+                       <br>
+                       <textarea class="in" name="comment" cols="45" rows="8" maxlength="65525" required="required" data-gramm="false" lt-skip="true" spellcheck="false"></textarea>
+                   </div>
+                    <br>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block btn-lg" name="submit">Submit Testimonial</button>
+                    </div>
+
+            </form>
+        </div>
+        </div>
+    </body>
+</html>

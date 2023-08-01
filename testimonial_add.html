@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="ThreeWiseMen {Divine Junior Anderson Odeyenuma}">
+
+        <!-- css bootstrap library -->
+        <link rel="stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+        <!-- jQuery bootstrap library -->
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+        <!-- javaScript bootstrap library -->
+        <script src =  "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+        <!-- Local css style file -->
+        <link rel="stylesheet" href="style.css">
+
+        <title>Testimonial_add</title>
+
+        
+    </head>
+
+    <body>
+        <nav class="navbar navbar-light">
+            <div class="container">
+                <div class="navbar-header">
+
+                    <!-- Collapsible button for mobile -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mobile">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- Name and logo -->
+                    <a class="navbar-brand" href="php/access_level.php">LittleHumans <span><img src="assets/logo.png" height="70px"> </span></a>
+                </div>
+
+                <!-- Collapse div -->
+                <div class="collapse navbar-collapse" id="mobile">
+                    <ul class="nav navbar-nav">
+
+                        <li><a href="php/services.php"><span class="glyphicon glyphicon-heart-empty"></span> Services</a></li>
+                        <li><a href="registration.html"><span class="glyphicon glyphicon-education"></span> Register child</a></li>
+                        <li><a href="testimonial_add_or_show.html"><span class="glyphicon glyphicon-stats"></span> Testemonials</a></li>
+
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="php/contact_us.php"><span class="glyphicon glyphicon-send"></span> Contact us</a></li>
+
+                        <!-- Login dropdown menu -->
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#"> User<span class="caret"></span></a>
+
+                            <ul class="dropdown-menu">
+                                <li><a href="login.html">Login <span class="glyphicon glyphicon-log-in"></span></a> </li>
+                                <li><a href="php/logout.php">Logout <span class="glyphicon glyphicon-log-out"></span></a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="feedback">
+           <div class="content">
+           <div class="header">				
+                    <h4 class="title">Feedback</h4>
+                </div>
+            <div class="body">
+                <form action="php/Testimonial_add2.php" method="post" novalidate>
+
+
+                    <!-- Name section -->
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input type="text" class="form-control" name="firstname" id="firstname" placeholder="Enter Firstname" required="required">
+                        </div>
+                    </div>
+                    <br>
+
+
+                    <!-- Date section -->
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                            <input type="date" class="form-control" name="days_date" id="days_date" required="required">
+                        </div>
+                    </div>
+                    <br>
+
+
+                    <!-- Select menu -->
+                    <div class="form-group">
+                        <select class="form-control" id="choose_service" name="service">
+                            <option value="">Click to choose service</option>
+                            <optgroup label="Half Day">
+                                <option value="1 Day(Half Day)">1 Day(Half Day)</option>
+                                <option value="3 Day(Half Day)">3 Days(Half Day)</option>
+                                <option value="5 Day(Half Day)">5 Days(Half Day)</option>
+
+                            </optgroup>
+
+                            <optgroup label="Full Day">
+                                <option value="1 Day(Full Day)">1 Day(Full Day)</option>
+                                <option value="3 Day(Full Day)">3 Days(Full Day)</option>
+                                <option value="5 Day(Full Day)">5 Days(Full Day)</option>
+
+                            </optgroup>
+
+                        </select>
+                    </div>
+                    <br>
+                    
+
+                    <!-- Comment section -->
+                    <div class="form-group">
+                       <div class="in">
+                        <label for="comment"><h4><small>Enter comment: </small></h4></label>
+                        <br>
+                        <textarea class="in" name="comment" cols="45" rows="8" maxlength="500" required="required" data-gramm="false" lt-skip="true" spellcheck="false"></textarea>
+                    </div>
+                    </div>
+                    <br>
+                    
+                    
+                    <!-- Submit button -->
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block btn-lg" name="submit">Submit Testimonial</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+        </div>
+        
+        <!-- Footer-->
+        <footer class="footer text-center">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Location</h4>
+                        <p class="lead mb-0">
+                            Griffith College Dublin
+                            <br>
+                            South Circular Road
+                            <br>
+                            Dublin 8
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Email Address</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="mailto:threewisemenn@gmail.com"><h3>threewisemenn@gmail.com</h3></a>
+
+                    </div>
+                    <!-- Footer About Text-->
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">About Threewisemen</h4>
+                        <p class="lead mb-0">
+                            ThreeWiseMen is a foudation focused on developing the society and contributing to humanity at large
+                            
+                        </p>
+                    </div>
+                </div>
+        </footer>
+    </body>
+</html>
