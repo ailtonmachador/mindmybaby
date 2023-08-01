@@ -7,3 +7,8 @@ It was develeped in group of three people. I developed backend and mysql also ho
 This project contains few bugs that I will fix in the future.
 Many of the coding could be improved witch I plan to do soon.
 
+backend: PHP, javascript
+frontend: HTML, CSS
+database: mySQL
+outros: gitHub
+
